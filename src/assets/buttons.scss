@@ -1,0 +1,73 @@
+@import "src/assets/colors";
+
+.p-btn-white{
+  display: inline-block;
+  background-color: $p-white;
+  color: $p-dark-blue;
+  text-align: center;
+  padding: 7px 7px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  &:hover {
+    background-color: $p-dark-blue;
+    color: $p-white;
+    border: 2px solid $p-white;
+  }
+}
+
+
+.p-btn-dark{
+  display: inline-block;
+  color: $p-white;
+  background-color: $p-dark-blue;
+  text-align: center;
+  padding: 7px 7px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  &:hover {
+    background-color: #384750;
+    border: 2px solid $p-dark-blue;
+  }
+}
+
+
+.p-btn-dark-on-white{
+  display: inline-block;
+  background-color: $p-dark-blue;
+  color: $p-white;
+  text-align: center;
+  padding: 4px 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 2px;
+  border: 2px solid $p-dark-blue;
+  &:hover {
+    background-color: #384750;
+    color: $p-white;
+    border: 2px solid $p-dark-blue;
+  }
+}
+.p-btn-white-on-white{
+  display: inline-block;
+  background-color: $p-white;
+  color: $p-dark-blue;
+  text-align: center;
+  padding: 4px 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid $p-dark-blue;
+  &:hover {
+    background-color: $p-dark-blue;
+    color: $p-white;
+  }
+}
+
+.p-btn-small{
+  font-size: 12px; /* You can adjust the font size as needed */
+  padding: 5px 10px; /* You can adjust the padding as needed */
+  border-radius: 4px;
+}
+
+.p-check-box-btn{
+  padding: 0;
+}

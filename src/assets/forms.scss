@@ -1,0 +1,154 @@
+@import "src/assets/colors";
+@import "src/assets/buttons";
+
+
+.form-panel-white-on-dark{
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  border-radius: 7px;
+  form{
+    background-color: transparent;
+  }
+  input{
+    background-color: transparent;
+  }
+  div{
+    background-color: transparent;
+  }
+  input{
+    width: 100%;
+    background-color: transparent;
+    color: $p-white; // Set the text color
+    border: 2px solid $p-white;
+    &::placeholder {
+      color: $p-weak-white; // Set the placeholder color
+    }
+    padding: 7px;
+    outline: $p-white;
+    transition: outline-color 0.3s ease;
+    &:focus {
+      outline-color: $p-white;
+    }
+  }
+  textarea{
+    width: 100%;
+    background-color: transparent;
+    color: $p-white; // Set the text color
+    border: 2px solid $p-white;
+    &::placeholder {
+      color: $p-weak-white; // Set the placeholder color
+    }
+    padding: 7px;
+    outline: $p-white;
+    transition: outline-color 0.3s ease;
+    &:focus {
+      outline-color: $p-white;
+    }
+  }
+
+  .form-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    label {
+      color: $p-white; // Set the text color for the label
+    }
+
+
+    .alert-danger{
+      background-color: $p-white;
+      color: $p-weak-dark-blue;
+      width: 100%;
+    }
+  }
+  .alert-danger-parent{
+      width: 100%;
+      position: relative;
+    }
+  .alert-danger{
+    padding-left: 7px;
+    width: 100%;
+    background-color: $p-white;
+    color: $p-dark-blue ;
+    position: absolute;
+  }
+
+}
+
+
+.form-panel-dark-on-white{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  form{
+    width: 100%;
+  }
+  input{
+      width: 100%;
+      background-color: transparent;
+      color: $p-dark-blue; // Set the text color
+      &::placeholder {
+        color: $p-weak-dark-blue; // Set the placeholder color
+      }
+      padding: 7px;
+      outline: $p-dark-blue;
+      transition: outline-color 0.3s ease;
+      &:focus {
+        outline-color: $p-dark-blue;
+      }
+  }
+  select{
+    background-color: transparent;
+    color: $p-dark-blue; // Set the text color
+    &::placeholder {
+      color: $p-weak-dark-blue; // Set the placeholder color
+    }
+    padding: 7px;
+    outline: $p-dark-blue;
+    transition: outline-color 0.3s ease;
+    &:focus {
+      outline-color: $p-dark-blue;
+    }
+  }
+  text-area{
+      width: 100%;
+      background-color: transparent;
+      color: $p-dark-blue; // Set the text color
+      &::placeholder {
+        color: $p-weak-dark-blue; // Set the placeholder color
+      }
+      padding: 7px;
+      outline: $p-dark-blue;
+      transition: outline-color 0.3s ease;
+      &:focus {
+        outline-color: $p-dark-blue;
+      }
+  }
+  .form-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 0;
+    width: 100%;
+    border: 2px solid $p-dark-blue;
+    label {
+      color: $p-dark-blue; // Set the text color for the label
+    }
+  }
+  .alert-danger-parent{
+      width: 100%;
+      position: relative;
+    }
+  .alert-danger{
+    padding-left: 7px;
+    width: 100%;
+    background-color: $p-dark-blue;
+    color: $p-white;
+    position: absolute;
+  }
+
+}
+
+
+

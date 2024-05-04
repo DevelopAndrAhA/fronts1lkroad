@@ -1,0 +1,58 @@
+
+<div class = "container" >
+  <h2 class="mt-5">Shopping cart</h2>
+
+  <table class="table" >
+    <thead>
+    <tr>
+      <th scope="col">№</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Sum</th>
+    </tr>
+    </thead>
+    <tbody >
+    <tr *ngFor="let i = index; let model of cart">
+      <th>{{i+1}}</th>
+      <td>{{model.product.name}}</td>
+      <td><! –– edit button ––>
+
+        {{model.product.price}}
+      </td>
+      <td>
+
+        <button mat-button class="btn-sml" (click)="onRemove(model, i)">
+          -
+        </button>
+        {{model.quantity}}
+        <! –– delete ––>
+        <button mat-button class="btn-sml" (click)="onUpdate(model)">
+          +
+        </button>
+      </td>
+      <td class = "text-nowrap">
+        {{model.product.price*model.quantity}} $
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <div *ngIf="cart.length<1" class="empty-cart">
+    <mat-icon >
+      shopping_bag
+    </mat-icon>
+    <h3>Empty cart</h3>
+    <a routerLink="/category">
+      View products
+    </a>
+  </div>
+
+
+  <button *ngIf="cart.length>0" class="p-btn-dark-on-white" routerLink="/checkout/payment">
+    Proceed to checkout
+  </button>
+  <br>
+
+</div>
+
+

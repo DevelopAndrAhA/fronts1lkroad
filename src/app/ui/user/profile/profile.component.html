@@ -1,0 +1,25 @@
+<div class="p-container ps-4">
+  <div class="row">
+    <!-- Left Column - User Information -->
+    <div class="col-md-3 mt-4 order-sm-1">
+      <h3>{{user?.name + ' '}}</h3>
+      <mat-divider></mat-divider>
+      <br>
+      <p class="menu-item" routerLink="/checkout/cart">Cart</p>
+
+      <p class="menu-item" (click)="onMenuChanged('address')">Address</p>
+
+      <mat-divider></mat-divider>
+      <label class="link-logout" (click)="logout()">Logout</label>
+    </div>
+
+    <div class="col-md-4 mt-4 order-sm-1">
+      <app-user-address *ngIf="menu==='address'"></app-user-address>
+    </div>
+
+
+  </div>
+
+
+</div>
+

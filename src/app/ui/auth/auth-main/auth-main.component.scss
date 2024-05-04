@@ -1,0 +1,54 @@
+@import "src/assets/colors";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.auth-container {
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $p-white;
+  border-radius: 7px;
+}
+
+.container {
+  margin: 10px;
+  width: 350px;
+  height: 500px;
+  border-radius: 7px;
+  perspective: 800px;
+
+}
+
+.panel.rotate {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.panel {
+  background-color: $p-dark-blue;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+
+
+.back {
+  transform: rotateY(180deg);
+}
